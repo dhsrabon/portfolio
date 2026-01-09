@@ -1,0 +1,289 @@
+
+*{ margin:0;
+   padding:0;
+    box-sizing:border-box; }
+body{ font-family: Arial,
+   Helvetica,
+    sans-serif; color:#0f172a; }
+
+
+.header{ background:#fff; }
+.nav{
+  max-width:1135px;
+  margin:auto;
+  padding:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.menu{ display:flex; gap:30px; list-style:none; }
+.menu a{ text-decoration:none; color:#334155; font-weight:500; }
+
+.btn-primary{
+  background:#2f855a;
+  color:#fff;
+  border:none;
+  padding:13px 17px;
+  border-radius:218px;
+  cursor:pointer;
+}
+.btn-outline{
+  background:transparent;
+  border:2px solid #e2e8f0;
+  padding:10px 17px;
+  border-radius:6px;
+  color:#fff;
+}
+
+
+.banner{
+  background: linear-gradient(rgba(2,6,23,.7), rgba(2,6,23,.7)),
+              url("B13-A01-Knowledge-Vault/assets/hero-bg.png") center/cover;
+  padding:122px 22px;
+  color:#fff;
+}
+
+.banner-content{
+  max-width:720px;
+  margin:auto;
+  text-align:center;
+}
+
+
+.banner-layer{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:10px 18px;
+  border-radius:9990px;
+
+  background:rgba(255,255,255,.92);
+  border:1px solid rgba(255,255,255,.55);
+
+  color:#065f46;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.1;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.layer-dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 0 3px rgba(34,197,94,.18);
+}
+
+
+.banner h1{
+  font-size:48px;
+  margin:20px 0;
+  font-weight:800;
+}
+
+.banner h1 span{ color:#22c55e; }
+
+.banner p{
+  color:#cbd5f5;
+  margin-bottom:30px;
+  line-height:1.6;
+}
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.hero h1{ font-size:50px; margin:22px 0; }
+.hero h1 span{ color:#22c55e; }
+.hero p{ color:#cbd5f5; margin-bottom:30px; }
+.hero-buttons{ display:flex; 
+  justify-content:center; gap:15px; }
+
+
+.note{ padding:80px 22px; 
+  text-align:center; }
+.note-cards{
+  max-width:1130px;
+  margin:50px auto 0;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.icon-contain{
+  width:56px;
+  height:56px;
+  margin:0 auto 12px;
+  display:grid;
+  place-items:center;
+ background-color: rgb(226, 52, 52);
+  border-radius:999px;
+}
+.icon img{
+  width:28px;
+  height:28px;
+  object-fit:contain;
+  display:block;
+}
+
+
+.solution{ padding:80px 20px; background:#fff; }
+.solution-card{
+  max-width:1140px;
+  margin:0 auto;
+  padding:56px;
+  border:2px dashed #7db6bf;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  gap:56px;
+}
+.solution-left{ flex:0 0 48%;
+   display:flex; justify-content:center; }
+.solution-left img{ width:100%; max-width:520px; 
+  height:auto; display:block; 
+  object-fit:contain; }
+.solution-right
+{ flex:1; }
+
+.solution-label{
+  font-size:12px;
+  letter-spacing:.12em;
+  font-weight:700;
+  color:green;
+  margin-bottom:12px;
+}
+.solution-title{
+  font-size:44px;
+  line-height:1.12;
+  font-weight:800;
+  color:#0b1220;
+  margin-bottom:14px;
+}
+.solution-desc{
+  max-width:520px;
+  font-size:14px;
+  line-height:1.7;
+  color:#64748b;
+  margin-bottom:18px;
+}
+
+
+.solution-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.solution-list li{
+  position:relative;
+  padding-left:35px;
+  font-size:14px;
+  color:#0f172a;
+}
+.solution-list li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:2px;
+  width:20px;
+  height:20px;
+  background-image:url("B13-A01-Knowledge-Vault/assets/CheckCircle.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+
+.contain-section{ padding:100px 20px; background:#fff; }
+.contain-box{
+  max-width:1140px;
+  margin:auto;
+  background:#f9f7f2;
+  padding:70px 20px;
+  text-align:center;
+  border-radius:12px;
+}
+.contain-box h2{ font-size:32px; 
+  color:#0f172a; 
+  margin-bottom:12px; }
+.cta-text{ color:#64748b; font-size:15px;
+   line-height:1.6; 
+   margin-bottom:30px; }
+.contain-btn{
+  background:#2f855a;
+  color:#fff;
+  border:none;
+  padding:14px 26px;
+  font-size:15px;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+}
+.contain:hover{ background:#276749; }
+.cta-note{ margin-top:14px;
+   font-size:13px; 
+   color:#64748b; }
+
+.site-footer{
+  background:#001931;
+  color:#cbd5f5;
+  padding:40px 20px 18px;
+}
+.footer-container{
+  max-width:1140px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.footer-brand img{ height:38px; 
+  width:auto;
+   display:block; }
+.footer-social{ text-align:right; }
+.footer-social-title{ font-size:14px; 
+  margin-bottom:10px; color:#e2e8f0; }
+.footer-icons{ display:flex;
+   justify-content:flex-end; 
+   gap:10px; }
+.social-link{
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(226,232,240,.25);
+}
+.social-link img{ width:16px; 
+  height:16px; object-fit:contain; 
+  display:block; 
+background-color: whitesmoke;
+}
+.social-link:hover{ background-color: #fff; }
+
+.footer-bottom{
+  max-width:1140px;
+  margin:18px auto 0;
+  padding-top:18px;
+  border-top:1px solid rgba(81, 131, 196, 0.15);
+  text-align:center;
+  font-size:13px;
+  color:#94a3b8;
+}
+
+
+
